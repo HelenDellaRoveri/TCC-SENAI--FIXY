@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/cadastro.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="shotcut icon" href="../img/estrela.png" type="image/x=icon">
+    <title>Fixy - Cadastro</title>
+</head>
+<body>
+    <div class="conteiner_cad" id="main-container">
+
+        <h1>Seja bem vindo(a) ao Fixy!</h1>
+        <h2>Crie uma nova conta</h2>
+        <form id="register-form" action="">
+
+          <div class="full-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+          </div>
+          <div class="half-box spacing">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+          </div>
+          <div class="half-box">
+              <label for="lastname">Sobrenome</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+          </div>
+          <div class="half-box spacing">
+            <label for="lastname">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+          </div>
+          <div class="half-box">
+            <label for="passconfirmation">Confirmação de senha</label>
+            <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+          </div>
+          <div>
+            <input class="termo" type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+          </div>
+          <div class="full-box">
+            <input id="btn-submit" type="submit" value="Registrar">
+          </div>
+        </form>
+
+      </div>
+      <p class="error-validation template"></p>
+
+      <script src="../js/cadastro.js"></script>
+  
+</body>
+</html>

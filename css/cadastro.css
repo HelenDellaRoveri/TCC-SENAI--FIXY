@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3vh;
+}
+input, label{
+    display: block;
+    outline: none;
+    width: 100%;
+}
+a{
+    color: black;
+}
+h1, h2{
+    text-align: center;
+}
+h2{
+    margin-bottom: .5rem;
+}
+#main-container {
+    width: 500px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba( 255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 25px;
+}
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+.spacing {
+    margin-right: 2.5%;
+}
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+input:focus {
+    border-color: #1B223C;
+}
+input[type="submit"] {
+    background-color: #1B223C;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: black;
+    transition: .5s;
+}
+#agreement {
+    margin-right: 5px;
+}
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+.template {
+    display: none;
+}
+@media (max-width: 600px) {
+
+    body {
+        background-size: cover;
+      }  
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    input,
+    label {
+      display: flex;
+      font-size: 0.8rem;
+    }
+    #main-container {
+        height: 25%;
+        width: 70%;
+        margin-top: 1.5rem;
+      }
+      .half-box {
+        flex: 1 1 100%;
+        margin-bottom: 5px;
+      }
+      .spacing {
+        margin-right: 0;
+      }
+      input[type="submit"] {
+        width: 40%;
+        font-size: 0.8rem;
+      }
+      .half-box:nth-child(odd) {
+        margin-right: 0;
+      }
+  }
